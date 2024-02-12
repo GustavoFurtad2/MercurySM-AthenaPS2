@@ -1,24 +1,40 @@
-# DataMercury
+   MercurySM(Mercury Save Manager)
 
+Author: GustavoFurtad2 (github.com/GustavoFurtad2)
+
+# How to start?
+  In the top of your code can you import like this:
+  ```js
+  import {MercurySM} from "./mercurysm.js"
+  ```
+  And create a class in this way:
+  ```js
+  let MySave = new MercurySM("mysavefile.json")
+  ```
+
+# Methods
+
+  exists(name) - String value, return true if the specified item exists else it will return false
+
+  get(name) - String value, Get the value of the specified item
+
+  delete(name) - String value, Delete the specified item
+
+  setValue(itemName, itemValue) - (itemName - String) (itemValue - Value) Change the itemName specified by itemValue if the item does not exist, it will create
+  saveIn(path) - String value, save a sketch in the specified file
+
+  undo() - Undo the sketch to the original file
+
+# Example
+
+```js
+import {MercurySM} from "./mercurysm.js"
+
+let MySave = new MercurySM("mysavefile.json")
+MySave.setValue("playerPoints", 1)
+MySave.saveIn("mysavefile.json")
+while (true)
+ Screen.clear()
+ Screen.flip()
+}
 ```
-   ___      _                                                
-   /   \__ _| |_ __ _    /\/\   ___ _ __ ___ _   _ _ __ _   _ 
-  / /\ / _` | __/ _` |  /    \ / _ | '__/ __| | | | '__| | | |
- / /_/| (_| | || (_| | / /\/\ |  __| | | (__| |_| | |  | |_| |
-/___,' \__,_|\__\__,_| \/    \/\___|_|  \___|\__,_|_|   \__, |
-                                                        |___/ 
-```
-
-Data Mercury it's a Json Data Handler for Athena Enviroment
-by GustavoFurtad2 (github.com/GustavoFurtad2)
-
-Use examples:
-
-let save = new Data("save.json"); // Make a new Data using a json file
-
-console.log(save.exists("name")); // Checks if item "name" exists
-console.log(save.get("name")); // Get the value of the specified item
-console.log(save.delete("name")); // Dele item "name"
-save.setValue("name", "Game1"); // Set or create a value in item name, set Game1 of the new name value
-save.saveIn("save.json"); // Save the sketch in the specified file
-save.undo(); // Undo the sketch to the original file
