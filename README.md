@@ -1,6 +1,6 @@
    MercurySM(Mercury Save Manager)
 
-Author: GustavoFurtad2 (github.com/GustavoFurtad2)
+  MercurySM it´s a save manager for Playstation 2 Athena Engine, files types: json.
 
 # How to start?
   In the top of your code can you import like this:
@@ -33,7 +33,7 @@ import {MercurySM} from "./mercurysm.js"
 let MySave = new MercurySM("mysavefile.json")
 MySave.setValue("playerPoints", 1)
 MySave.saveIn("mysavefile.json")
-while (true)
+while (true) {
  Screen.clear()
  Screen.flip()
 }
