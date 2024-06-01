@@ -38,3 +38,9 @@ while (true) {
  Screen.flip()
 }
 ```
+
+# TO DO list
+
+
+ Support for memory card
+ Add support for other file extensions
