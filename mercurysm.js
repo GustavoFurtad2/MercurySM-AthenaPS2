@@ -25,11 +25,11 @@ export class MercurySM {
   }
 
   exists(item) {
-    return this.sketch[item] !== undefined
+    return this.sketch[item] !== null
   }
 
   get(item) {
-    return this.sketch[item] ?? undefined
+    return this.sketch[item] ?? null
   }
 
   delete(item) {
