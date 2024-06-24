@@ -44,3 +44,4 @@ while (true) {
 
  Support for memory card
  Add support for other file extensions
+ Custom PS2 ICON
