@@ -1,5 +1,6 @@
    MercurySM(Mercury Save Manager)
 
+  available for athenaenv-pkgs: <link>https://github.com/terremoth/athenaenv-pkgs</link><BR><BR><BR>
   MercurySM it´s a save manager for Playstation 2 Athena Engine, files types: json.
 
 # How to start?
